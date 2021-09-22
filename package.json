@@ -1,0 +1,46 @@
+{
+    "name": "@mangosteen/edgar-broken-txt",
+    "version": "1.0.0",
+    "description": "Provides a list of accession numbers of broken/missing .txt EDGAR files.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "engines": {
+        "node": ">=10"
+    },
+    "scripts": {
+        "prebuild": "rimraf dist",
+        "build": "tsc",
+        "test-publish-npm": "npm pack",
+        "publish-npm": "npm publish --access public",
+        "prepublish": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/paya-cz/edgar-broken-txt.git"
+    },
+    "keywords": [
+        "edgar",
+        "sec",
+        "sec-edgar",
+        "filings",
+        "filing",
+        "submission",
+        "missing",
+        "broken",
+        "txt",
+        "accession",
+        "number"
+    ],
+    "author": "Paya",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/paya-cz/edgar-broken-txt/issues"
+    },
+    "homepage": "https://github.com/paya-cz/edgar-broken-txt#readme",
+    "devDependencies": {
+        "@tsconfig/node10": "^1.0.8",
+        "@types/node": "^10.17.60",
+        "rimraf": "^3.0.2",
+        "typescript": "^4.4.2"
+    }
+}
